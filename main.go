@@ -2,12 +2,12 @@ package main
 
 import (
 	"potassium.sh/dot-mining/config"
-	"potassium.sh/dot-mining/modrinth"
+	"potassium.sh/dot-mining/minecraft"
 )
 
 
 
 func main() {
 	config := config.LoadConfig()
-	modrinth.LoadMods(config.Mods)
+	minecraft.WriteOptions(config.Options, "")
 }
