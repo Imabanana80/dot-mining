@@ -1,3 +1,5 @@
-[fabric.mods]
+[mods]
 sodium = "AANobbMI"
 fabric-api = "P7dR8mSH"
+test = "test"
+resourcepack = "50dA9Sha"

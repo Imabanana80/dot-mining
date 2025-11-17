@@ -9,6 +9,7 @@ import (
 type (
 	Config struct {
 		Fabric Loader `toml:fabric`	
+		Mods map[string]string `toml:mods`
 	}
 	Loader struct {
 		Mods map[string]string `toml:mods`
