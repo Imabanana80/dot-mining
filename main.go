@@ -1,16 +1,13 @@
 package main
 
 import (
-	"fmt"
-	
 	"potassium.sh/dot-mining/config"
+	"potassium.sh/dot-mining/modrinth"
 )
 
 
 
 func main() {
 	config := config.LoadConfig()
-	for modName, modID := range config.Fabric.Mods {
-		fmt.Printf("- %s: %s\n", modName, modID)
-	}
+	modrinth.LoadMods(config.Mods)
 }
